@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1">
+n  <meta name="viewport" content="width=device-width,initial-scale=1">
   <title>SHUAIBU BAPPA — Portfolio</title>
   <meta name="description" content="Portfolio of SHUAIBU BAPPA — frontend developer">
   <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -67,7 +67,7 @@
 
     @media(min-width:760px){
       .hero{grid-template-columns:1fr 360px}
-      .projects{grid-template-columns:repeat(2,1fr)}
+      .projects{grid-template-columns:repeat(2,1ffr)}
       .about{grid-template-columns:1fr 320px}
     }
     @media(min-width:1100px){
@@ -93,10 +93,10 @@
           <div class="hero-top">
             <div class="avatar">SB</div>
             <div>
-              <h1>Hi — I'm <span style="color:var(--accent)">SHUAIBU</span></h1>
+              <h1>Hi — I'm <span style="color:var(--accent)">SHUAIBU BAPPA</span></h1>
               <p class="lead">Frontend developer building responsive, accessible websites. I transform ideas into clean interfaces using HTML, CSS & JavaScript.</p>
               <div class="cta">
-                <a class="btn" href="#projects">View Projects</a>
+                <a class="btn" href="https://beytechnologies.github.io/Portfolio/" target="_blank">View Portfolio</a>
                 <a class="btn" href="mailto:beytechnologies247@gmail.com">Email Me</a>
               </div>
             </div>
@@ -124,13 +124,25 @@
         <h2>Projects</h2>
         <div class="projects">
           <article class="card">
+            <div class="proj-thumb">Portfolio</div>
+            <div>
+              <h3>My Portfolio</h3>
+              <p>This site — showcasing my work, skills, and contact info.</p>
+              <div class="links">
+                <a class="link" href="https://beytechnologies.github.io/Portfolio/" target="_blank">Live</a>
+                <a class="link" href="https://github.com/beytechnologies/Portfolio" target="_blank">GitHub</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="card">
             <div class="proj-thumb">Travel</div>
             <div>
               <h3>Travel Agency Website</h3>
               <p>A responsive website for a travel agency with booking info and destination showcase.</p>
               <div class="links">
-                <a class="link" href="#">Live</a>
-                <a class="link" href="#">GitHub</a>
+                <a class="link" href="https://beytechnologies.github.io/travel-agency/" target="_blank">Live</a>
+                <a class="link" href="https://github.com/beytechnologies/travel-agency" target="_blank">GitHub</a>
               </div>
             </div>
           </article>
@@ -141,8 +153,8 @@
               <h3>CultureConnect</h3>
               <p>A cultural showcase platform highlighting traditions, events, and history.</p>
               <div class="links">
-                <a class="link" href="#">Live</a>
-                <a class="link" href="#">GitHub</a>
+                <a class="link" href="https://beytechnologies.github.io/cultureconnect/" target="_blank">Live</a>
+                <a class="link" href="https://github.com/beytechnologies/cultureconnect" target="_blank">GitHub</a>
               </div>
             </div>
           </article>
@@ -190,23 +202,25 @@
     </main>
 
     <footer>
-      Built with ❤️ — Bey Technologies • <a href="#" style="color:var(--accent);text-decoration:none">GitHub</a>
+      Built with ❤️ — Bey Technologies • <a href="https://github.com/beytechnologies" style="color:var(--accent);text-decoration:none">GitHub</a>
     </footer>
-
   </div>
 
   <script>
     function contactHandler(e){
       e.preventDefault();
-      const name=document.getElementById('name').value.trim();
-      const email=document.getElementById('email').value.trim();
-      const msg=document.getElementById('message').value.trim();
-      const feedback=document.getElementById('feedback');
-      if(!name||!email||!msg){feedback.textContent='Please complete the form.';return}
-      const subject=encodeURIComponent('Portfolio contact from '+name);
-      const body=encodeURIComponent(msg+'\n\n— '+name+' <'+email+'>');
-      window.location.href = 'mailto:beytechnologies247@gmail.com?subject='+subject+'&body='+body;
-      feedback.textContent='Opening your email client...';
+      const name = document.getElementById('name').value.trim();
+      const email = document.getElementById('email').value.trim();
+      const msg = document.getElementById('message').value.trim();
+      const feedback = document.getElementById('feedback');
+      if (!name || !email || !msg) {
+        feedback.textContent = 'Please complete the form.';
+        return;
+      }
+      const subject = encodeURIComponent('Portfolio contact from ' + name);
+      const body = encodeURIComponent(msg + '\\n\\n— ' + name + ' <' + email + '>');
+      window.location.href = 'mailto:beytechnologies247@gmail.com?subject=' + subject + '&body=' + body;
+      feedback.textContent = 'Opening your email client...';
     }
   </script>
 </body>
