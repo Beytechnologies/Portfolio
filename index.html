@@ -1,0 +1,213 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>SHUAIBU BAPPA — Portfolio</title>
+  <meta name="description" content="Portfolio of SHUAIBU BAPPA — frontend developer">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root{
+      --bg:#0f1724;
+      --card:#0b1220;
+      --muted:#98a0b3;
+      --accent:#7c3aed;
+      --glass: rgba(255,255,255,0.03);
+      --radius:14px;
+      --max-width:1100px;
+      --gap:18px;
+      color-scheme: dark;
+    }
+    *{box-sizing:border-box}
+    html,body{height:100%}
+    body{
+      margin:0;
+      font-family:Inter,system-ui,Segoe UI,Roboto,'Helvetica Neue',Arial;
+      background:linear-gradient(180deg,var(--bg),#071023 60%);
+      color:#e6eef8;
+      padding:40px 16px;
+      display:flex;
+      justify-content:center;
+    }
+    .wrap{width:100%;max-width:var(--max-width)}
+
+    header{display:flex;align-items:center;justify-content:space-between;margin-bottom:28px}
+    .logo{font-weight:700;letter-spacing:-0.2px}
+    nav{display:flex;gap:12px}
+    a.btn{background:var(--glass);padding:8px 12px;border-radius:10px;text-decoration:none;color:inherit;font-weight:600;font-size:14px}
+
+    .hero{display:grid;grid-template-columns:1fr;gap:20px;align-items:center;margin-bottom:28px}
+    .hero-card{background:linear-gradient(180deg, rgba(255,255,255,0.02), transparent);border-radius:var(--radius);padding:22px}
+    .hero-top{display:flex;align-items:center;gap:16px}
+    .avatar{width:84px;height:84px;border-radius:12px;background:linear-gradient(135deg,var(--accent),#3b82f6);display:flex;align-items:center;justify-content:center;font-weight:700;font-size:28px}
+    h1{margin:0 0 6px 0;font-size:28px}
+    p.lead{margin:0;color:var(--muted)}
+    .cta{margin-top:14px;display:flex;gap:12px}
+
+    .section{margin-bottom:28px}
+    .section h2{margin:0 0 12px 0}
+    .projects{display:grid;grid-template-columns:repeat(1,1fr);gap:var(--gap)}
+    .card{background:var(--card);border-radius:12px;padding:14px;display:flex;gap:12px;align-items:flex-start}
+    .proj-thumb{width:120px;height:74px;border-radius:8px;background:linear-gradient(90deg,#1f2937,#111827);flex-shrink:0;display:flex;align-items:center;justify-content:center;font-weight:600;color:var(--muted)}
+    .card h3{margin:0 0 6px 0;font-size:16px}
+    .card p{margin:0;color:var(--muted);font-size:14px}
+    .card .links{margin-top:8px;display:flex;gap:8px}
+    .link{font-size:13px;padding:6px 8px;border-radius:8px;background:rgba(255,255,255,0.02);text-decoration:none;color:inherit}
+
+    .about{display:grid;grid-template-columns:1fr;gap:12px}
+    .skills{display:flex;flex-wrap:wrap;gap:8px}
+    .skill{background:rgba(255,255,255,0.03);padding:6px 10px;border-radius:999px;font-size:13px}
+
+    form{display:grid;grid-template-columns:1fr;gap:10px}
+    input,textarea{background:transparent;border:1px solid rgba(255,255,255,0.06);padding:10px;border-radius:8px;color:inherit}
+    button{padding:10px 14px;border-radius:10px;border:0;background:linear-gradient(90deg,var(--accent),#06b6d4);color:#041025;font-weight:700}
+
+    footer{margin-top:26px;color:var(--muted);font-size:13px;text-align:center}
+
+    @media(min-width:760px){
+      .hero{grid-template-columns:1fr 360px}
+      .projects{grid-template-columns:repeat(2,1fr)}
+      .about{grid-template-columns:1fr 320px}
+    }
+    @media(min-width:1100px){
+      .projects{grid-template-columns:repeat(2,1fr)}
+    }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <div class="logo">BEY<span style="color:var(--accent)">TECHNOLOGIES</span></div>
+      <nav>
+        <a class="btn" href="#projects">Projects</a>
+        <a class="btn" href="#about">About</a>
+        <a class="btn" href="#contact">Contact</a>
+      </nav>
+    </header>
+
+    <main>
+      <!-- HERO -->
+      <section class="hero">
+        <div class="hero-card">
+          <div class="hero-top">
+            <div class="avatar">SB</div>
+            <div>
+              <h1>Hi — I'm <span style="color:var(--accent)">SHUAIBU</span></h1>
+              <p class="lead">Frontend developer building responsive, accessible websites. I transform ideas into clean interfaces using HTML, CSS & JavaScript.</p>
+              <div class="cta">
+                <a class="btn" href="#projects">View Projects</a>
+                <a class="btn" href="mailto:beytechnologies247@gmail.com">Email Me</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <aside class="hero-card">
+          <h3 style="margin-top:0">Contact</h3>
+          <p class="lead" style="font-size:14px">Email: <strong>beytechnologies247@gmail.com</strong></p>
+          <p class="lead" style="font-size:14px">Location: Adamawa State, Nigeria</p>
+          <hr style="border:none;border-top:1px solid rgba(255,255,255,0.04);margin:12px 0">
+          <h3 style="margin:0 0 6px 0">Skills</h3>
+          <div class="skills">
+            <div class="skill">HTML</div>
+            <div class="skill">CSS</div>
+            <div class="skill">Responsive Design</div>
+            <div class="skill">JavaScript (basic)</div>
+            <div class="skill">Git & GitHub</div>
+          </div>
+        </aside>
+      </section>
+
+      <!-- PROJECTS -->
+      <section id="projects" class="section">
+        <h2>Projects</h2>
+        <div class="projects">
+          <article class="card">
+            <div class="proj-thumb">Travel</div>
+            <div>
+              <h3>Travel Agency Website</h3>
+              <p>A responsive website for a travel agency with booking info and destination showcase.</p>
+              <div class="links">
+                <a class="link" href="#">Live</a>
+                <a class="link" href="#">GitHub</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="card">
+            <div class="proj-thumb">Culture</div>
+            <div>
+              <h3>CultureConnect</h3>
+              <p>A cultural showcase platform highlighting traditions, events, and history.</p>
+              <div class="links">
+                <a class="link" href="#">Live</a>
+                <a class="link" href="#">GitHub</a>
+              </div>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <!-- ABOUT -->
+      <section id="about" class="section">
+        <h2>About</h2>
+        <div class="about">
+          <div class="hero-card">
+            <p style="margin:0 0 8px 0">I’m a frontend developer focused on building intuitive user interfaces. I enjoy turning designs into fast, accessible websites. I’m currently learning JavaScript and building projects to strengthen my skills.</p>
+            <p style="margin:0">Quick case study idea: describe one project, the problem, your approach, and the result. Keep it short and measurable.</p>
+          </div>
+
+          <div class="hero-card">
+            <h3 style="margin-top:0">Tools</h3>
+            <div class="skills" style="margin-top:8px">
+              <div class="skill">VS Code</div>
+              <div class="skill">Git</div>
+              <div class="skill">Chrome DevTools</div>
+              <div class="skill">Netlify</div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- CONTACT -->
+      <section id="contact" class="section">
+        <h2>Contact</h2>
+        <div class="hero-card">
+          <form onsubmit="contactHandler(event)">
+            <input id="name" type="text" placeholder="Your name" required>
+            <input id="email" type="email" placeholder="Your email" required>
+            <textarea id="message" rows="5" placeholder="Message" required></textarea>
+            <div style="display:flex;gap:10px;align-items:center;justify-content:space-between">
+              <button type="submit">Send message</button>
+              <small style="color:var(--muted)">Or beytechnologies247@gmail.com</small>
+            </div>
+            <p id="feedback" style="color:var(--muted);margin:8px 0 0 0;font-size:13px"></p>
+          </form>
+        </div>
+      </section>
+
+    </main>
+
+    <footer>
+      Built with ❤️ — Bey Technologies • <a href="#" style="color:var(--accent);text-decoration:none">GitHub</a>
+    </footer>
+
+  </div>
+
+  <script>
+    function contactHandler(e){
+      e.preventDefault();
+      const name=document.getElementById('name').value.trim();
+      const email=document.getElementById('email').value.trim();
+      const msg=document.getElementById('message').value.trim();
+      const feedback=document.getElementById('feedback');
+      if(!name||!email||!msg){feedback.textContent='Please complete the form.';return}
+      const subject=encodeURIComponent('Portfolio contact from '+name);
+      const body=encodeURIComponent(msg+'\n\n— '+name+' <'+email+'>');
+      window.location.href = 'mailto:beytechnologies247@gmail.com?subject='+subject+'&body='+body;
+      feedback.textContent='Opening your email client...';
+    }
+  </script>
+</body>
+</html>
