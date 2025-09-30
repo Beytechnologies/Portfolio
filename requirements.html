@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Travel Requirements - SAHIB Travels</title>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #f5f7fa;
+      color: #333;
+    }
+
+    header {
+      background: #008060;
+      padding: 15px 30px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    header .logo {
+      height: 50px;
+    }
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 20px;
+      margin: 0;
+      padding: 0;
+    }
+    nav ul li a {
+      color: white;
+      text-decoration: none;
+      font-weight: 500;
+    }
+    nav ul li a.active {
+      border-bottom: 2px solid white;
+      padding-bottom: 3px;
+    }
+    nav ul li a button {
+      background: white;
+      color: #008060;
+      padding: 8px 16px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      font-weight: bold;
+    }
+    nav ul li a button:hover {
+      background: #f0f0f0;
+    }
+
+    main {
+      max-width: 900px;
+      margin: 40px auto;
+      padding: 20px;
+    }
+    main h1 {
+      text-align: center;
+      margin-bottom: 30px;
+      color: #008060;
+    }
+    .card {
+      background: white;
+      padding: 25px;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      margin-bottom: 25px;
+    }
+    .card h2 {
+      margin-top: 0;
+      margin-bottom: 20px;
+      color: #008060;
+    }
+    .requirements {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+    .requirements li {
+      display: flex;
+      align-items: center;
+      padding: 12px 0;
+      border-bottom: 1px solid #eee;
+      font-size: 16px;
+    }
+    .requirements li:last-child {
+      border-bottom: none;
+    }
+    .requirements li::before {
+      content: "✔";
+      color: #008060;
+      font-weight: bold;
+      margin-right: 12px;
+      font-size: 18px;
+    }
+    .support-box {
+      text-align: center;
+      background: #eaf6f2;
+      padding: 20px;
+      border-radius: 10px;
+      border: 1px solid #d4ede5;
+      font-size: 16px;
+      line-height: 1.6;
+    }
+    .support-box strong {
+      color: #008060;
+    }
+
+    footer {
+      background: #333;
+      color: #eee;
+      text-align: center;
+      padding: 25px;
+      margin-top: 40px;
+    }
+    footer p {
+      margin: 5px 0;
+      font-size: 14px;
+    }
+    footer a {
+      color: #008060;
+      text-decoration: none;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <img src="logo.jpg" alt="SAHIB Logo" class="logo">
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="services.html">Services / Packages</a></li>
+        <li><a href="journey.html">The Journey</a></li>
+        <li><a href="requirements.html" class="active">Travel Requirements</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="registration.html"><button>Register</button></a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Main -->
+  <main>
+    <h1>Travel Requirements</h1>
+
+    <div class="card">
+      <h2>What You Need to Travel for Hajj or Umrah</h2>
+      <ul class="requirements">
+        <li>Valid international passport with at least 6 months validity</li>
+        <li>Recent passport photographs (white background)</li>
+        <li>National Identification Number (NIN)</li>
+        <li>Vaccination card (e.g., Yellow fever, Meningitis, COVID-19 if applicable)</li>
+        <li>Proof of payment for package</li>
+        <li>Completed registration form</li>
+        <li>Any additional Saudi Arabian government requirements (we will inform you)</li>
+      </ul>
+    </div>
+
+    <div class="support-box">
+      For help or questions, call or contact our support team on WhatsApp:  
+      <strong>+2347039550997, +2348035956943</strong>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <div class="footer-grid">
+      <div>
+        <img src="logo.jpg" alt="SAHIB Logo" style="height:70px; margin-bottom:10px;">
+        <p>Your trusted partner for Hajj & Umrah Journeys.</p>
+      </div>
+      <div>
+        <h3>Contact Us</h3>
+        <p>No 04, Galadima Aminu Way Jimeta, Yola North, Adamawa State</p>
+        <p>07039550997, 08035956943</p>
+        <p>sahibtravels24@gmail.com</p>
+      </div>
+      <div>
+        <h3>Follow Us</h3>
+        <div class="social-icons">
+          <a href="mailto:sahibtravels24@gmail.com"><img src="gmail.png" alt="Gmail"></a>
+          <a href="https://www.facebook.com/profile.php?id=61579397104380" target="_blank"><img src="facebook.png.png" alt="Facebook"></a>
+          <a href="https://www.instagram.com/sahibtourofficial" target="_blank"><img src="instagram.png.png" alt="Instagram"></a>
+          <a href="https://x.com/SahibHajjUmrah" target="_blank"><img src="x.png.png" alt="Twitter"></a>
+          <a href="https://wa.me/2347039550997" target="_blank"><img src="whatsapp.png.png" alt="WhatsApp"></a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      &copy; 2025 Sahib International Travels & Tours Ltd. All Rights Reserved.
+    </div>
+  </footer>
+
+
+
+</body>
+</html>

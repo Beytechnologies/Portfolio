@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Register - Sahib Travels</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #f5f7fa;
+    }
+    header {
+      background: #008060; /* Green */
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+    
+    h1 {
+      margin: 0;
+    }
+    .container {
+      max-width: 600px;
+      background: white;
+      margin: 30px auto;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    }
+    h2 {
+      color: #008060;
+      text-align: center;
+    }
+    label {
+      display: block;
+      margin-top: 15px;
+      font-weight: bold;
+    }
+    input, select, textarea {
+      width: 100%;
+      padding: 10px;
+      margin-top: 5px;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+    }
+    button {
+      margin-top: 20px;
+      width: 100%;
+      padding: 12px;
+      border: none;
+      background: #008060; /* Green */
+      color: white;
+      font-size: 16px;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    button:hover {
+      background: #00664d; /* Darker green */
+    }
+    footer {
+      background: #f9f9f9;
+      padding: 40px 20px;
+      margin-top: 40px;
+      text-align: center;
+      border-top: 2px solid #eee;
+    }
+    footer img {
+      height: 60px;
+      margin-bottom: 15px;
+    }
+    footer h3 {
+      color: #008060;
+      margin-bottom: 10px;
+    }
+    footer .social a img {
+      width: 30px;
+      height: 30px;
+      margin: 0 10px;
+    }
+    footer p {
+      font-size: 14px;
+      color: #555;
+      margin-top: 20px;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <h1>Registration Portal</h1>
+    <p>Your Trusted Partner for Hajj & Umrah Journeys</p>
+  </header>
+
+  <!-- Registration Form -->
+  <div class="container">
+    <h2>Register for Hajj / Umrah</h2>
+    <form action="https://formspree.io/f/xgvzbplq" method="POST">
+      <label for="fullname">Full Name</label>
+      <input type="text" id="fullname" name="fullname" required>
+
+      <label for="email">Email Address</label>
+      <input type="email" id="email" name="email" required>
+
+      <label for="phone">Phone Number</label>
+      <input type="tel" id="phone" name="phone" required>
+
+      <label for="package">Select Package</label>
+      <select id="package" name="package" required>
+        <option value="">-- Choose a Package --</option>
+        <option value="hajj">Hajj Package</option>
+        <option value="umrah">Umrah Package</option>
+      </select>
+
+      <label for="notes">Additional Notes</label>
+      <textarea id="notes" name="notes" rows="4"></textarea>
+
+      <!-- Redirect to thank-you page after submission -->
+      <input type="hidden" name="_redirect" value="thankyou.html">
+
+      <button type="submit">Submit Registration</button>
+    </form>
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    <div style="max-width: 1200px; margin: auto;">
+      <img src="logo.jpg" alt="SAHIB Logo">
+
+      <h3>Your Trusted Partner for Hajj & Umrah Journeys</h3>
+      <p>
+        <a href="mailto:sahibtravels24@gmail.com" target="_blank">
+          <img src="gmail.png" alt="gmail" style="width:30px; height:30px;">
+        </a>
+      </p>
+
+      <!-- Social Media Links -->
+      <div class="social">
+        <a href="https://www.facebook.com/profile.php?id=61579397104380" target="_blank">
+          <img src="facebook.png" alt="Facebook">
+        </a>
+        <a href="https://www.instagram.com/sahibtourofficial?igsh=dDg3NnF1cGd1YWo2" target="_blank">
+          <img src="instagram.png" alt="Instagram">
+        </a>
+        <a href="https://x.com/SahibHajjUmrah" target="_blank">
+          <img src="x.png" alt="Twitter">
+        </a>
+        <a href="https://wa.me/2347039550997" target="_blank">
+          <img src="whatsapp.png" alt="WhatsApp">
+        </a>
+      </div>
+
+      <p>&copy; 2025 Sahib International Travels and Tours Ltd. All rights reserved.</p>
+    </div>
+  </footer>
+
+</body>
+</html>
