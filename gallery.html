@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Gallery - SAHIB Travels</title>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    .gallery-section {
+      padding: 40px 20px;
+      max-width: 1200px;
+      margin: auto;
+      text-align: center;
+    }
+
+    .gallery-section h1 {
+      color: #207d54;
+      font-size: 2.4rem;
+      margin-bottom: 15px;
+    }
+
+    .gallery-section p {
+      font-size: 1.1rem;
+      color: #444;
+      max-width: 800px;
+      margin: 0 auto 30px;
+    }
+
+    .gallery-carousel {
+  overflow: hidden;
+  width: 100%;
+  padding: 20px 0;
+}
+
+.gallery-track {
+  display: flex;
+  width: calc(400px * 24); /* 24 images total */
+  animation: scrollGallery 60s linear infinite;
+}
+
+.gallery-track img {
+  width: 400px;
+  height: 250px;
+  margin-right: 20px;
+  border-radius: 12px;
+  object-fit: cover;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+@keyframes scrollGallery {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
+  </style>
+</head>
+<body>
+
+  <header>
+    <img src="logo.jpg" alt="SAHIB Logo" class="logo">
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="services.html">Services / Packages</a></li>
+        <li><a href="journey.html">The Journey</a></li>
+        <li><a href="requirements.html">Travel Requirements</a></li>
+        <li><a href="gallery.html" class="active">Gallery</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="registration.html" style="color:#008060; font-weight:bold;"><button>Register</button></a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="gallery-section">
+    <h1>Our Sacred Memories</h1>
+    <p>
+      These images capture more than just locations—they reflect moments of peace, gratitude, and the overwhelming joy of being close to the House of Allah. 
+      Every journey tells a story of faith, prayer, and dreams fulfilled. We are grateful to witness your spiritual milestones.
+    </p>
+
+    <div class="gallery-carousel">
+  <div class="gallery-track">
+    <!-- 12 images (original) -->
+    <img src="G1.jpg" />
+    <img src="G2.jpg" />
+    <img src="G3.jpg" />
+    <img src="G4.jpg" />
+    <img src="G5.jpg" />
+    <img src="G6.jpg" />
+    <img src="G7.jpg" />
+    <img src="G8.jpg" />
+    <img src="G9.jpg" />
+    <img src="G10.jpg" />
+    <img src="G11.jpg" />
+    <img src="G12.jpg" />
+
+    <img src="G1.jpg" />
+    <img src="G2.jpg" />
+    <img src="G3.jpg" />
+    <img src="G4.jpg" />
+    <img src="G5.jpg" />
+    <img src="G6.jpg" />
+    <img src="G7.jpg" />
+    <img src="G8.jpg" />
+    <img src="G9.jpg" />
+    <img src="G10.jpg" />
+    <img src="G11.jpg" />
+    <img src="G12.jpg" />
+  </div>
+</div>
+
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Sahib International Travels and Tours Ltd. All rights reserved.</p>
+    <p>Contact: sahibtravels24@gmail.com | WhatsApp: +2347039550997</p>
+  </footer>
+
+</body>
+</html>

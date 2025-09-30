@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Hajj Journey - SAHIB Travels</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0; padding: 0;
+      background: #f9f9f9;
+      color: #000000;
+    }
+
+    /* Header */
+    header {
+      background: #008060;
+      padding: 12px 20px;
+      color: white;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    header .logo { height: 50px; }
+
+    nav ul { list-style: none; display: flex; margin: 0; padding: 0; }
+    nav ul li { margin: 0 10px; }
+    nav ul li a {
+      color: white; text-decoration: none; font-weight: bold; transition: 0.3s;
+    }
+    nav ul li a:hover { text-decoration: underline; }
+    nav ul li a.active { text-decoration: underline; }
+
+    /* Banner */
+    .banner {
+      width: 100%;
+      height: 300px;
+      background: url('banner.jpg') no-repeat center center/cover;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      text-align: center;
+    }
+    .banner h1 {
+      font-size: 2.5rem;
+      background: rgba(0, 0, 0, 0.5);
+      padding: 10px 20px;
+      border-radius: 10px;
+    }
+
+    /* Intro */
+    .intro {
+      max-width: 900px;
+      margin: 40px auto;
+      padding: 0 20px;
+      text-align: center;
+    }
+    .intro h2 {
+      color: #008060;
+      margin-bottom: 15px;
+    }
+
+    /* Accordion */
+    .accordion {
+      max-width: 900px;
+      margin: 20px auto 50px;
+      padding: 0 20px;
+    }
+    .accordion-item {
+      background: #fff;
+      border-radius: 10px;
+      margin-bottom: 15px;
+      box-shadow: 0 5px 8px rgba(0, 0, 0, 0.1);
+      overflow: hidden;
+      transition: 0.3s;
+    }
+    .accordion-item:hover { transform: translateY(-2px); }
+
+    .accordion-header {
+      padding: 15px 20px;
+      cursor: pointer;
+      font-weight: bold;
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      background: #008060;
+      color: white;
+    }
+    .accordion-header span {
+      background: white;
+      color: #008060;
+      font-weight: bold;
+      padding: 6px 12px;
+      border-radius: 50%;
+      margin-right: 15px;
+      font-size: 0.9rem;
+    }
+    .accordion-content {
+      max-height: 0;
+      overflow: hidden;
+      padding: 0 20px;
+      line-height: 1.6;
+      background: #fff;
+      transition: max-height 0.4s ease, padding 0.4s ease;
+    }
+    .accordion-content img {
+      max-width: 100%;
+      margin: 15px 0;
+      border-radius: 8px;
+    }
+    .accordion-item.active .accordion-content {
+      max-height: 500px;
+      padding: 20px;
+    }
+
+    /* Footer */
+    footer {
+      background: #008060;
+      color: white;
+      padding: 30px 20px;
+      text-align: center;
+    }
+    footer img.logo { height: 60px; margin-bottom: 15px; }
+    footer h3 { margin: 10px 0; font-size: 1.2rem; }
+    footer .social a {
+      margin: 0 8px;
+      display: inline-block;
+    }
+    footer .social img {
+      width: 32px; height: 32px;
+      transition: transform 0.3s;
+    }
+    footer .social img:hover { transform: scale(1.2); }
+    footer p { margin-top: 15px; font-size: 0.9rem; }
+  </style>
+</head>
+<body>
+
+<header>
+  <img src="logo.jpg" alt="SAHIB Logo" class="logo">
+  <nav>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About Us</a></li>
+      <li><a href="services.html">Services</a></li>
+      <li><a href="journey.html" class="active">The Journey</a></li>
+      <li><a href="requirements.html">Travel Requirements</a></li>
+      <li><a href="gallery.html">Gallery</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+</header>
+
+<!-- Banner -->
+<section class="banner">
+  <h1>The Hajj Journey</h1>
+</section>
+
+<!-- Intro -->
+<section class="intro">
+  <h2>The Hajj Journey</h2>
+  <p>
+    Hajj, the fifth pillar of Islam, is sacred and obligatory for every able adult Muslim. 
+    It is an extraordinary opportunity to embark on a profound spiritual expedition to the holiest city in Islam, Makkah. 
+    Just like the other important practices in Islam, Hajj comes with its own set of steps to be followed diligently during this sacred journey.
+  </p>
+</section>
+
+<!-- Accordion Steps -->
+<section class="accordion">
+
+  <!-- Step 1 -->
+  <div class="accordion-item">
+    <div class="accordion-header"><span>01</span> Ihram</div>
+    <div class="accordion-content">
+      <p>Start your Hajj journey with a sincere intention to enter the state of Ihram and engage in the rituals of Hajj, with the recitation of the Talbiyah. Then, put on the Ihram garments.</p>
+      <img src="ihram 1.JPG" alt="Ihram">
+    </div>
+  </div>
+
+  <!-- Step 2 -->
+  <div class="accordion-item">
+    <div class="accordion-header"><span>02</span> Tawaf Al-Qudum</div>
+    <div class="accordion-content">
+      <p>Upon entering Makkah, perform the Tawaf Al-Qudum by circumambulating the Kaaba seven times. Then, pray two Rak'ahs behind Maqam Ibrahim (if possible).</p>
+      <img src="Tawaf 2.JPG" alt="Tawaf">
+    </div>
+  </div>
+
+  <!-- Step 3 -->
+  <div class="accordion-item">
+    <div class="accordion-header"><span>03</span> Sa'i between Safa and Marwa</div>
+    <div class="accordion-content">
+      <p>Perform Sa'i between Safa and Marwah, walking seven times starting at Safa and ending at Marwah.</p>
+      <img src="safa 3.JPG" alt="Sai">
+    </div>
+  </div>
+
+  <!-- Continue until Step 12 -->
+  <div class="accordion-item">
+    <div class="accordion-header"><span>04</span> Mina (Day of Tarwiyah)</div>
+    <div class="accordion-content">
+      <p>Head to Mina on the morning of the 8th of Dhul-Hijjah and spend the night in prayer until the morning of the 9th.</p>
+      <img src="mina 4.JPG" alt="Mina">
+    </div>
+  </div>
+
+  <div class="accordion-item">
+    <div class="accordion-header"><span>05</span> Arafah</div>
+    <div class="accordion-content">
+      <p>On the 9th of Dhul-Hijjah, head to Arafat and devote yourself to Allah until sunset.</p>
+      <img src="Arfah 5.JPG" alt="Arfah">
+    </div>
+  </div>
+
+  <div class="accordion-item">
+    <div class="accordion-header"><span>06</span> Muzdalifah</div>
+    <div class="accordion-content">
+      <p>After sunset, move to Muzdalifah, spend the night there, and collect pebbles for Jamarat.</p>
+      <img src="Muzdalifa 6.JPG" alt="Muzdalifah">
+    </div>
+  </div>
+  <div class="accordion-item">
+    <div class="accordion-header"><span>07</span> Pelt Jamrat Al-Aqabah</div>
+    <div class="accordion-content">
+      <p>On the 10th of Dhul-Hijjah, pelt Jamrat Al-Aqabah with seven pebbles while reciting Takbeer.</p>
+      <img src="Jamrat 7.JPG" alt="Jamarat">
+    </div>
+ </div>
+
+  <div class="accordion-item">
+    <div class="accordion-header"><span>08</span> Adhahi</div>
+    <div class="accordion-content">
+      <p>Offer Adhahi (sacrifice) to draw closer to Allah and share with those in need.</p>
+      <img src="Adhahi 8.JPG" alt="Adhahi">
+    </div>
+  </div>
+
+  <div class="accordion-item">
+    <div class="accordion-header"><span>09</span> Shave Hair or Trim</div>
+    <div class="accordion-content">
+      <p>Shave or trim your hair. Then, remove the Ihram and change into your regular clothes.</p>
+      <img src="shave hair 9.JPG" alt="Shave">
+     </div>
+  </div>
+
+  <div class="accordion-item">
+    <div class="accordion-header"><span>10</span> Tawaf Al-Ifada</div>
+    <div class="accordion-content">
+      <p>Return to Makkah and perform Tawaf Al-Ifada, circumambulating the Kaaba seven times and praying behind Maqam Ibrahim.</p>
+      <img src="Tawaf  10.JPG" alt="Tawaf">
+    </div>
+  </div>
+
+  <div class="accordion-item">
+    <div class="accordion-header"><span>11</span> Pelting the three Jamarat</div>
+    <div class="accordion-content">
+      <p>On the 11th, 12th, and optionally 13th of Dhul-Hijjah, pelt the three Jamarat in Mina.</p>
+      <img src="jamat 11.JPG" alt="Jamarat">
+    </div>
+  </div>
+
+  <div class="accordion-item">
+    <div class="accordion-header"><span>12</span> Tawaf Al-Wadaa</div>
+    <div class="accordion-content">
+      <p>Before leaving Makkah, perform the farewell Tawaf (Tawaf Al-Wadaa) by circumambulating the Kaaba seven times.</p>
+      <img src="Al wada 12.JPG" alt="Tawaf">
+    </div>
+  </div>
+</section>
+
+<script>
+  // Accordion toggle
+  document.querySelectorAll('.accordion-header').forEach(header => {
+    header.addEventListener('click', () => {
+      const item = header.parentElement;
+      item.classList.toggle('active');
+    });
+  });
+</script>
+
+<footer>
+  <img src="logo.jpg" alt="SAHIB Logo" class="logo">
+  <h3>Your Trusted Partner for Hajj & Umrah Journeys</h3>
+  <p>
+    <a href="mailto:sahibtravels24@gmail.com" target="_blank">
+      <img src="gmail.png" alt="gmail" style="width:30px; height:30px;">
+    </a>
+  </p>
+  <div class="social">
+    <a href="https://www.facebook.com/profile.php?id=61579397104380" target="_blank"><img src="facebook.png.png" alt="Facebook"></a>
+    <a href="https://www.instagram.com/sahibtourofficial?igsh=dDg3NnF1cGd1YWo2" target="_blank"><img src="instagram.png.png" alt="Instagram"></a>
+    <a href="https://x.com/SahibHajjUmrah" target="_blank"><img src="x.png.png" alt="Twitter"></a>
+    <a href="https://wa.me/2347039550997" target="_blank"><img src="whatsapp.png.png" alt="WhatsApp"></a>
+  </div>
+  <p>&copy; 2025 Sahib International Travels and Tours Ltd. All rights reserved.</p>
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>ABOUT US - SAHIB INTERNATIONAL</title>
+  <link rel="stylesheet" href="style.css"/>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      color: #333;
+    }
+
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 15px 40px;
+      background: #fff;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+    header .logo {
+      height: 60px;
+    }
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 20px;
+    }
+    nav ul li a {
+      text-decoration: none;
+      color: #333;
+      font-weight: 500;
+    }
+    nav ul li a.active,
+    nav ul li a:hover {
+      color: #008060; /* Green highlight */
+    }
+
+    /* Hero section */
+    .hero {
+      background: url("about-banner.jpg") no-repeat center center/cover;
+      height: 300px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      color: #fff;
+      position: relative;
+    }
+    .hero::after {
+      content: "";
+      position: absolute;
+      top:0; left:0; right:0; bottom:0;
+      background: rgba(0,0,0,0.5);
+    }
+    .hero h1 {
+      position: relative;
+      font-size: 2.5rem;
+      z-index: 1;
+    }
+
+    main {
+      max-width: 1000px;
+      margin: 40px auto;
+      padding: 0 20px;
+    }
+    main section {
+      margin-bottom: 40px;
+      text-align: center;
+    }
+    main h1, main h2 {
+      color: #008060; /* Green headings */
+      margin-bottom: 15px;
+    }
+    .card {
+      background: #fff;
+      padding: 20px;
+      border-radius: 12px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.08);
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+    .card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+    }
+
+    /* Grid for Mission, Vision, Objectives */
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 20px;
+    }
+
+    footer {
+      background: #0b2e26; /* Dark green footer */
+      color: #ddd;
+      text-align: center;
+      padding: 40px 20px;
+      margin-top: 50px;
+    }
+    footer p {
+      margin: 5px 0;
+      font-size: 14px;
+    }
+    footer h3 {
+      color: #fff;
+    }
+    .social img {
+      width: 30px;
+      height: 30px;
+      margin: 0 5px;
+      transition: transform 0.3s;
+    }
+    .social img:hover {
+      transform: scale(1.1);
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <img src="logo.jpg" alt="SAHIB Logo" class="logo"/>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html" class="active">About Us</a></li>
+        <li><a href="services.html">Services / Packages</a></li>
+        <li><a href="journey.html">The Journey</a></li>
+        <li><a href="requirements.html">Requirements</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="registration.html" style="color:#008060; font-weight:bold;"><button>Register</button></a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Hero -->
+  <section class="hero">
+    <h1>ABOUT US </h1>
+  </section>
+
+  <!-- Main Content -->
+  <main>
+    <section>
+      <h1>Who We Are</h1>
+      <div class="card">
+        <p>
+          <em>Labbayka Allahumma labbayk, labbayka la sharika laka labbayk...</em>  
+          At SAHIB International Travels & Tours, we are dedicated to guiding you through a hassle-free, spiritually uplifting Hajj and Umrah experience. With our expertise and passion for service, your sacred journey is in trusted hands.
+        </p>
+      </div>
+    </section>
+
+    <section>
+      <div class="grid">
+        <div class="card">
+          <h2>Our Vision</h2>
+          <p>To be a leading Hajj & Umrah travel provider, delivering efficient services and exceeding client expectations in line with global best practices and regulatory standards.</p>
+        </div>
+        <div class="card">
+          <h2>Our Mission</h2>
+          <p>To provide exceptional value-added travel experiences by investing in expert staff and modern facilities—ensuring satisfaction through excellent customer service.</p>
+        </div>
+        <div class="card">
+          <h2>Our Objectives</h2>
+          <p>Our primary goal is to make Hajj, Umrah, and all travel processes simple, accessible, and comfortable for everyone we serve.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <div style="max-width: 1200px; margin: auto;">
+      <img src="logo.jpg" alt="SAHIB Logo" width="100">
+
+      <h3>Your Trusted Partner for Hajj & Umrah Journeys</h3>
+      <p>
+        <a href="mailto:sahibtravels24@gmail.com" target="_blank">
+          <img src="gmail.png" alt="gmail" style="width:30px; height:30px;">
+        </a>
+      </p>
+
+      <!-- Social Media Links -->
+      <div class="social">
+        <a href="https://www.facebook.com/profile.php?id=61579397104380" target="_blank">
+          <img src="facebook.png.png" alt="Facebook">
+        </a>
+        <a href="https://www.instagram.com/sahibtourofficial?igsh=dDg3NnF1cGd1YWo2" target="_blank">
+          <img src="instagram.png.png" alt="Instagram">
+        </a>
+        <a href="https://x.com/SahibHajjUmrah" target="_blank">
+          <img src="x.png.png" alt="Twitter">
+        </a>
+        <a href="https://wa.me/2347039550997" target="_blank">
+          <img src="whatsapp.png.png" alt="WhatsApp">
+        </a>
+      </div>
+
+      <p>&copy; 2025 Sahib International Travels and Tours Ltd. All rights reserved.</p>
+    </div>
+  </footer>
+
+</body>
+</html>
